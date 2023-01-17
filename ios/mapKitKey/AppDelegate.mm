@@ -1,17 +1,15 @@
 #import "AppDelegate.h"
 
-#import <YandexMapsMobile/YMKMapKitFactory.h>
 #import <React/RCTBundleURLProvider.h>
+#import <YandexMapsMobile/YMKMapKitFactory.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.moduleName = @"mapKitKey";
-
-  [YMKMapKit setLocale:@"ru_RU"];
+//  [YMKMapKit setApiKey:@"53b1b40d-2761-4e70-9344-4c7db06823a1"];
   [YMKMapKit setApiKey:@"92ae93a7-bfb9-4e25-886c-9dd2646f28a9"];
-  [YMKMapKit mapKit];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
